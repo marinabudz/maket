@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="maket.css" />
+    <title>Maket</title>
+  </head>
+  <body>
+    <!-- first block -->
+    <div class="aheader" id="adata">
+      <nav
+        class="navbar navbar-expand-lg navbar-expand-md navbar-dark header-menu"
+      >
+        <div class="container">
+          <!-- first block dropdown menu button -->
+          <button
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- first block LOGO -->
+          <div class="navbar-brand header-menu__brand" href="#">
+            <img
+              src="photos/firstBlock/icon.png"
+              class="navbar-brand"
+              class="align-top"
+              alt="brand_picture"
+            />
+            <span class="header-menu__brand">tajam </span>
+          </div>
+          <!-- first block collapse menu small screen -->
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul
+              class="navbar-nav list-unstyled text-uppercase d-lg-none d-md-none d-sm-block mt-3 header-menu__collapsed"
+            >
+              <li class="nav-item mb-3" v-for="element in header_menu">
+                <a :href="element.url">{{element.name}}</a>
+              </li>
+            </ul>
+          </div>
+          <!--first block menu top-->
+
+          <ul
+            class="navbar-nav list-unstyled text-uppercase d-md-inline-flex header-menu__main"
+          >
+            <li
+              class="nav-item pl-lg-4 pl-sm-3  "
+              v-for="element in header_menu"
+            >
+              <a :href="element.url">{{element.name}}</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- first block description  -->
+      <div class="header-description mr-auto ml-auto text-center">
+        <div class="header-description__title font-weight-bold mb-4">
+          We Are Awesome Creative Agency
+        </div>
+
+        <img
+          src="photos/firstBlock/line.png"
+          class="header-description__line"
+          alt="line"
+        />
+
+        <div class="header-description__text mb-5 mt-4">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          velit auctor aliquet. Aenean sollicitudin, lorem <br />quis bibendum
+          auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis
+          sed odio sit amet nibh <br />vulputate cursus a sit amet mauris. Morbi
+          accumsan ipsum velit.
+        </div>
+
+        <button class="text-capitalize font-weight-bold button mb-5">
+          learn more
+        </button>
+
+        <!-- first block dots  -->
+        <div class="mt-5 ">
+          <svg
+            class="bi bi-circle-fill  pr-1 mb-5"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            fill=" #00e0d0"
+          >
+            <circle cx="8" cy="8" r="8" />
+          </svg>
+          <svg
+            class="bi bi-circle pr-1 mb-5"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            fill="white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            class="bi bi-circle  pr-1 mb-5"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            fill="white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <svg
+            class="bi bi-circle  pr-1 mb-5"
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            fill="white"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 15A7 7 0 108 1a7 7 0 000 14zm0 1A8 8 0 108 0a8 8 0 000 16z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!-- second block -->
+    <div class="story pt-5 mt-5">
+      <div class="container ">
+        <div class="row d-flex justify-content-center mb-5">
+          <img
+            src="photos/secondBlock/icon.png"
+            alt="icon"
+            style="height:200px;"
+            class="mr-lg-5 mt-lg-4 mt-md-4 mt-sm-0"
+          />
+
+          <!-- second block description -->
+          <div
+            class="story-description ml-lg-5 pl-lg-5 pl-sm-0 mt-md-0 mt-sm-5 mt-xs-5 text-lg-left  text-sm-center text-xs-center"
+          >
+            <div class="story-description__title pb-3 font-weight-bold ">
+              OUR STORY
+            </div>
+            <div class="story-description__text font-weight-light">
+              <p>
+                This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                vel velit auctor <br />
+                aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+                elit consequat ipsum, <br />
+                nec sagittis sem nibh id elit. Duis sed odio sit amet nibh
+                vulputate cursus
+              </p>
+
+              <p>
+                Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt
+                auctor a ornare odio. <br />
+                Sed non mauris vitae erat consequat auctor eu in elit. Class
+                aptent taciti sociosqu<br />
+                ad litora torquent per conubia nostra, per inceptos himenaeos.
+              </p>
+            </div>
+            <!-- second block button -->
+            <button
+              class="text-capitalize font-weight-bold button mb-5 mt-sm-4"
+            >
+              learn more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- third block -->
+    <div class="video pt-5">
+      <div class="container pt-5">
+        <div class="text-center mt-5 pt-5 pb-5 font-weight-bold text-uppercase">
+          <img src="photos/thirdBlock/video.png" />
+          <p class="pt-4">watch our story</p>
+        </div>
+      </div>
+    </div>
+    <!-- forth block -->
+    <div class="expertise text-center mt-5">
+      <div class="container pt-5" id="expertiseGrid">
+        <!-- forth block header-->
+        <div class="expertise-discription">
+          <div class="expertise-discription__title font-weight-bold pb-3">
+            EXPERTISE
+          </div>
+          <div class="expertise-discription__text pb-3">
+            Lorem ipsum dolor sit amet proin gravida nibh vel velit
+          </div>
+          <img src="photos/forthBlock/line.png" alt="line" />
+        </div>
+
+        <!-- forth block grid table  -->
+        <div class="expertise-grid pt-5">
+          <div
+            v-for="element in expertise_grid"
+            class="expertise-grid__element ml-3 mb-4"
+          >
+            <img
+              class="pb-4 expertise-grid__picture"
+              :src="element.image"
+              alt="grid-image"
+            />
+            <div class="pb-4 font-weight-bold expertise-grid__title">
+              {{element.title}}
+            </div>
+            <div class="expertise-grid__text">{{element.description}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fifth block -->
+    <div class="team text-center mt-5">
+      <div class="container pt-5" id="teamGrid">
+        <!-- sixth block header  -->
+        <div class="team-discription">
+          <div
+            class="team-discription__title font-weight-bold pb-3 text-uppercase"
+          >
+            meet our amazing team
+          </div>
+          <div class="team-discription__text pb-3">
+            Lorem ipsum dolor sit amet proin gravida nibh vel velit
+          </div>
+          <img src="photos/forthBlock/line.png" alt="line" />
+        </div>
+        <!-- fifth block grid table  -->
+        <div class="team-grid pt-5 ">
+          <div
+            v-for="element in team_grid"
+            class="team-grid__element ml-lg-5 ml-sm-0 mb-5 "
+          >
+            <img
+              class="pb-4 team-grid__picture"
+              :src="element.image"
+              alt="team-image"
+            />
+            <p class="pb-2 text-uppercase">
+              {{element.title}} <br />
+              <span class="font-weight-light team-grid__text"
+                >{{element.description}}
+              </span>
+            </p>
+          </div>
+        </div>
+        <!-- sixth block footer -->
+        <div class="team-footer mt-5">
+          <p>Become part of our team, let's join us!</p>
+          <button class="text-uppercase font-weight-bold button mb-5">
+            we are hiring
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- sixth block -->
+    <div class="works  mt-5">
+      <div class="container">
+        <!-- sixth block header -->
+        <div class="works-header mb-5">
+          <div class="text-uppercase font-weight-bold works-header__title">
+            our works
+          </div>
+          <div class=" works-header__text">See all projects in dribble ></div>
+        </div>
+        <!-- sixth block grid table  -->
+        <div class="works-grid" id="worksGrid">
+          <div v-for="element in works_grid" class="works-grid__element">
+            <img
+              class="mb-5 pl-lg-4 pl-sm-0 works-grid__picture"
+              :src="element.image"
+              alt="team-image"
+            />
+          </div>
+        </div>
+        <!-- sixth block grid button  -->
+        <div class="text-center">
+          <button class="text-uppercase font-weight-bold button mb-5 ">
+            load more
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- seventh block  -->
+    <div class="reviews text-center pt-5">
+      <div class="container">
+        <img class="pb-5" src="photos/seventhBlock/sign.png" alt="sign" />
+        <div class="reviews__text pb-5">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel
+          velit auctor aliquet. Aenean <br />
+          sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,
+          nec sagittis sem nibh id elit. Duis<br />
+          sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
+          accumsan ipsum velit. Nam nec tellus <br />
+          a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat
+          consequat auctor eu in elit.
+        </div>
+        <div class="reviews__name font-weight-bold text-uppercase pb-5">
+          jane galadriel <br />
+          <span class="reviews__position font-weight-light">
+            ceo tengkurep
+          </span>
+        </div>
+        <img class="pb-5" src="photos/seventhBlock/slider.png" alt="slider" />
+      </div>
+    </div>
+
+    <!-- eight block  -->
+    <div class="contact mt-5">
+      <div class="container">
+        <!-- contact form -->
+        <form class="contact-form">
+          <p class="text-uppercase font-weight-bold">give us a good news</p>
+          <!-- form name  -->
+          <div class="form-group  pb-3">
+            <input type="text" class="form-control" placeholder="Name" />
+          </div>
+          <!-- form Email -->
+          <div class="form-group  pb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Email"
+            />
+          </div>
+          <!-- form subject -->
+          <div class="form-group  pb-3">
+            <input type="text" class="form-control" placeholder="Sugject" />
+          </div>
+          <!-- form Text Area  -->
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="10"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="text-uppercase font-weight-bold button mb-5 contact-form__button"
+          >
+            Submit
+          </button>
+        </form>
+
+        <!-- clients pictures -->
+        <div class="contact-clients" id="contactGrid">
+          <p class="text-uppercase font-weight-bold">our happy clients</p>
+          <div class="contact-grid" id="contactGrid">
+            <div v-for="element in contact_grid" class="contact-grid__element">
+              <img
+                class="mb-5 pr-5  contact-grid__picture"
+                :src="element.image"
+                alt="contact-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ninth block  footer-->
+    <footer class="footer pt-5 pb-5">
+      <div class="container">
+        <div class="footer-elements">
+          <!-- first element logo and description -->
+          <div class="footer-element">
+            <div class="footer-element__logo font-weight-light pb-3">
+              <img
+                style="height:50px; width:50px;"
+                src="photos/ninthBlock/logo.png"
+                alt="logo"
+              />
+              tajam
+            </div>
+
+            <p>
+              lorem quis bibendum auctor, nisi elit <br />
+              consequat ipsum, nec sagittis sem nibh elit. <br />
+              Duis sed odio sit amet auctror a ornare odio <br />
+              non mauris vitae erat in elit
+            </p>
+          </div>
+
+          <!-- second element address and phone  -->
+          <div class="footer-element">
+            <div
+              class="footer-element__title text-uppercase font-weight-bold pb-4"
+            >
+              our studio
+            </div>
+
+            <!-- adress -->
+            <div class="footer-element__direction">
+              <img
+                src="photos/ninthBlock/location.png"
+                alt="location"
+                class="footer-element__directionImage mr-2"
+              />
+              <div class="pb-3">
+                Ruko cucruk, Jl. Radio luar dalem jos <br />No.12 - 13,
+                Kalideres - Jakarta Barat <br />11480 - Indonesia
+              </div>
+            </div>
+
+            <!-- phone  -->
+            <div class="footer-element__direction">
+              <img
+                src="photos/ninthBlock/phone.png"
+                alt="location"
+                class="footer-element__directionImage mr-2"
+              />
+              <div>
+                (+62) 21-2224 3333
+              </div>
+            </div>
+          </div>
+
+          <!-- third element social networks -->
+          <div class="footer-element ">
+            <div
+              class="footer-element__title text-uppercase font-weight-bold pb-4"
+            >
+              stay in touch
+            </div>
+
+            <!-- newsletter -->
+            <div class="footer-element__newsletter">
+              <input
+                type="email"
+                class="form-control footer-element__newsletterEmail mr-3"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Subscribe our newsletter"
+              />
+              <button class="footer-button">
+                <img src="photos/ninthBlock/button.png" alt="button" />
+              </button>
+            </div>
+
+            <!-- social networks -->
+            <div class="footer-element__networks" id="networksGrid">
+              <div
+                v-for="element in networks_grid"
+                class="footer-element__networksGrid"
+              >
+                <img :src="element.image" alt="networks-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="maket.js"></script>
+  </body>
+</html>
